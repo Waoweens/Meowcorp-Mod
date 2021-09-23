@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "meowcorpmod",
+  "version": "${version}",
+  "name": "Meowcorp Mod",
+  "description": "Minecraft Mod for the Meowcorp Group",
+  "authors": [
+    "Waoweens",
+    "Meowcorp_Members"
+  ],
+  "contact": {
+    "website": "https://www.meowcorp.online",
+    "repo": "https://github.com/Waoweens/Meowcorp-Mod"
+  },
+  "license": "MIT",
+  "icon": "assets/meowcorp-mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "online.meowcorp.meowcorpmod.MeowcorpModClient"
+    ],
+    "main": [
+      "online.meowcorp.meowcorpmod.MeowcorpMod"
+    ]
+  },
+  "mixins": [
+    "meowcorpmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.7",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}
